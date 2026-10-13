@@ -1,0 +1,27 @@
+name: Optional native browser acceptance
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  reviewer-console:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Playwright
+        run: python -m pip install -r requirements-browser.txt
+      - name: Install Chromium
+        run: python -m playwright install --with-deps chromium
+      - name: Run native browser reviewer-console suite
+        run: python scripts/test.py --browser

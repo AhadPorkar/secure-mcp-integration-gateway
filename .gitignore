@@ -1,0 +1,11 @@
+build/
+target/
+.local/
+.env
+*.log
+!docs/evidence/*.txt
+.idea/
+.vscode/
+.DS_Store
+__pycache__/
+*.pyc

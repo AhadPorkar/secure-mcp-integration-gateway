@@ -1,0 +1,15 @@
+{
+  "gateway": "secure-mcp-integration-gateway",
+  "contractVersion": "1.0",
+  "credential": {
+    "mode": "service-header",
+    "header": "x-connector-service-key",
+    "callerTokenForwarding": false
+  },
+  "providers": [
+    {"tool":"orders.lookup","path":"/published/order-lookup/v1/invoke","effect":"read","tenantRequired":true},
+    {"tool":"inventory.check","path":"/published/inventory-check/v1/invoke","effect":"read","tenantRequired":true},
+    {"tool":"customer.documents.list","path":"/published/customer-documents/v1/invoke","effect":"read","tenantRequired":true},
+    {"tool":"orders.cancel","path":"/published/order-cancel/v1/invoke","effect":"write","tenantRequired":true,"idempotencyKeyRequired":true}
+  ]
+}

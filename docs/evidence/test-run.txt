@@ -1,0 +1,45 @@
+Built 19 Java source files.
+JAVA_CONTRACT_TESTS_PASSED=26
+PASS mcp.discover
+PASS mcp.discover-result-shape
+PASS oauth.protected-resource-metadata
+PASS oauth.metadata-cors
+PASS auth.scoped-tool-list
+PASS mcp.tool-list-result-shape
+PASS mcp.tool-schemas-closed
+PASS auth.missing-token
+PASS auth.challenge-resource-metadata
+PASS auth.audience-rejected
+PASS auth.expired-rejected
+PASS auth.tampered-token-rejected
+PASS auth.tool-list-least-privilege
+PASS auth.missing-scope
+PASS auth.admin-role-required
+PASS tenant.cross-tenant-hidden
+PASS tenant.argument-injection-rejected
+PASS mcp.header-name-binding
+PASS mcp.header-method-binding
+PASS mcp.protocol-version-rejected
+PASS mcp.meta-protocol-binding
+PASS mcp.unimplemented-method-fails-closed
+PASS attack.arbitrary-sql-not-exposed
+PASS attack.destination-argument-rejected
+PASS attack.identifier-injection-rejected
+PASS approval.request-created
+PASS approval.cross-tenant-review-hidden
+PASS approval.cross-tenant-execution-blocked
+PASS approval.self-approval-blocked
+PASS approval.independent-review
+PASS approval.argument-tamper-blocked
+PASS write.approved-execution
+PASS mcp.call-result-shape
+PASS write.idempotent-retry
+PASS documents.cross-tenant-hidden
+PASS audit.chain-verifies
+PASS audit.no-raw-business-arguments
+PASS browser.strict-csp
+PASS browser.safe-dom-and-memory-token
+PASS quota.enforced
+ATTACK_MATRIX_PASSED=40
+REPOSITORY_CHECKS_PASSED=11
+ALL_SELECTED_TESTS_PASSED

@@ -1,0 +1,36 @@
+{
+  "release": "1.0.0-rc.1",
+  "date": "2026-10-12",
+  "javaTarget": 21,
+  "mcpProtocolTarget": "2026-07-28",
+  "verified": {
+    "javaContractChecks": 26,
+    "liveHttpMcpAttackScenarios": 40,
+    "repositoryReleaseChecks": 11,
+    "totalDeterministicChecks": 77,
+    "status": "passed",
+    "capturedOutput": "docs/evidence/test-run.txt",
+    "repeatRunsAfterTamperTestHardening": 3,
+    "repeatRunStatus": "passed"
+  },
+  "notCountedAsPassed": {
+    "nativeBrowserAcceptance": "Included as manual workflow; authoring environment blocks native browser navigation.",
+    "officialMcpV2ClientAcceptance": "Included as manual workflow; official npm SDK was not executed in the authoring environment.",
+    "liveConnectorHubProviderAcceptance": "Generic fixed-path adapter is implemented; deployed Connector Hub provider revisions were not available in this environment."
+  },
+  "securityClaimsVerified": [
+    "issuer/audience/expiry token checks",
+    "scope-filtered tool visibility",
+    "identity-derived tenant isolation",
+    "closed argument schemas",
+    "MCP protocol/header/name binding",
+    "caller-token non-forwarding",
+    "fixed-path HTTPS/host allowlisting",
+    "exact approval binding",
+    "self/cross-tenant approval denial",
+    "idempotent retry contract",
+    "tamper-evident audit chain",
+    "quota enforcement",
+    "strict CSP and no browser token persistence APIs"
+  ]
+}

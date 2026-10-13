@@ -1,0 +1,13 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>io.ahad.connectorhub</groupId>
+  <artifactId>secure-mcp-integration-gateway</artifactId>
+  <version>1.0.0-rc.1</version>
+  <name>Secure MCP Integration Gateway</name>
+  <description>Governed MCP adapter for Connector Hub with tenant isolation, human approval, quotas and credential separation.</description>
+  <properties><maven.compiler.release>21</maven.compiler.release><project.build.sourceEncoding>UTF-8</project.build.sourceEncoding></properties>
+  <build><plugins>
+    <plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-compiler-plugin</artifactId><version>3.14.1</version><configuration><release>21</release><showWarnings>true</showWarnings></configuration></plugin>
+    <plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-jar-plugin</artifactId><version>3.4.2</version><configuration><archive><manifest><mainClass>io.ahad.mcpgateway.Main</mainClass></manifest></archive></configuration></plugin>
+  </plugins></build>
+</project>
